@@ -1,6 +1,6 @@
 .p-col-6{
 	border-style: groove;
-	border-color: rgb(45, 63, 211);
+	border-color: light-gray;
 	padding: 30px;
 	margin-top: 10px;
     margin-bottom: 10px;
@@ -9,4 +9,18 @@
     width: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+}
+body{
+    background-color: #eee;
+}
+
+span{
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px red;
 }
