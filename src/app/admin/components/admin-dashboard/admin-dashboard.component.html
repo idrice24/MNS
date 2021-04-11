@@ -1,53 +1,4 @@
-<!--    <!--TITLE
-   <div class="row mb-5">
-     <div class="col-md-12 text-center">
-       <h1 data-aos="fade-in-up" data-aos-offset="150" class="text-primary">Dashboard</h1>
-     </div>
-   </div>
 
-   <div class="p-grid">
-     <div class="p-col">
-       <div [style]="{width: '155px', height: '155px'}" class="bg-success text-center p-shadow-5">
-         <i class="pi pi-video"></i>
-         <h1> 23 Videos</h1>
-       </div>
-     </div>
-     <div class="p-col">
-       <div [style]="{width: '155px', height: '155px'}" class="bg-danger text-center p-shadow-5">
-         <i class="pi pi-user"></i>
-         <h1> {{numberOfAppUsers}} Users</h1>
-       </div>
-     </div>
-     <div class="p-col">
-       <div [style]="{width: '155px', height: '155px'}" class="bg-warning text-center p-shadow-5">
-         <i class="pi pi-spin pi-spinner"></i>
-         <h1> 23 Posts</h1>
-       </div>
-     </div>
-     <div class="p-col">
-       <div [style]="{width: '155px', height: '155px'}" class="bg-secondary text-center p-shadow-5">
-         <i class="pi pi-play"></i>
-         <h1> 50 Photos</h1>
-       </div>
-     </div>
-
-     <div class="p-col">
-       <div [style]="{width: '155px', height: '155px'}" class="text-center p-shadow-5">
-         <i class="pi pi-bell"></i>
-         <h1> ... Products</h1>
-       </div>
-     </div>
-
-   </div>
-   <!--
-     <div class="p-col-4" *ngFor="let box of items; index as i">
-       <div [class]="box p-shadow-5">
-         <p-progressSpinner strokeWidth="5" fill="#EEEEEE" animationDuration="1s"
-           [style]="{width: '155px', height: '155px'}">
-           <p> sdsd <span class="p-badge">2 </span> </p>
-         </p-progressSpinner>
-       </div>
-     </div> -->
 <div class="row mb-5">
      <div class="col-md-12 text-center">
        <h1 data-aos="fade-in-up" data-aos-offset="150" class="text-primary">Dashboard</h1><br>
@@ -59,6 +10,11 @@
         <div class="p-col-4 p-md-6 p-lg-3">
       <div *ngIf="subscription" class="text-right p-ml-10">
         <img style="border-radius: 10%;" width="15" height="15" [src]="subscription" alt="appUser.avatar"
+          class="p-shadow-1" />
+      </div>
+
+      <div *ngIf="loggingAvatar" class="text-right p-ml-10">
+        <img style="border-radius: 30%;" width="45" height="45" [src]="loggingAvatar" alt="appUser.avatar"
           class="p-shadow-1" />
       </div>
 
@@ -76,8 +32,8 @@
         </div>
         <hr>
         <div>
-          <i class="pi pi-cog"></i>
-          <span>setting</span>
+          <i class="pi pi-cog"> </i>
+          <p>setting</p>
         </div>
       </div>
 
@@ -85,8 +41,9 @@
         
 
           <div class="p-col-6">
-            <h2>Statestics</h2>
+            <span>Statestics</span>
             <p>this is the place where the statestics of the web app will be place<br> an here all can be seen by the user-admin app</p>
+            <hr>
             <div class="p-grid">
      <div class="p-col">
        <div [style]="{width: '155px', height: '155px'}" class="bg-success text-center p-shadow-5">
@@ -125,7 +82,7 @@
           </div>
 
       <div class="p-col-6"><!-- this will be an auto size increament-->
-       <h2>History</h2>
+       <span>History</span>
        <div>Recent sell product</div>
 
             
@@ -148,7 +105,7 @@
       <div class="p-col-4">
 
         <div class="p-col-6">
-        <h2>Upcoming Product</h2>
+        <span>Upcoming Product</span>
 
             <p>this is the place where the statestics of the web app will be place<br> an here all can be seen by the user-admin app</p>
 
